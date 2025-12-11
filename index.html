@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>ArtLover</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header-nav">
+                <a href="#" class="logo link">
+                    <img class="img-logo" 
+                        src="./images/logo_art.png" srcset="./images/logo_art.png 1x, ./images/logo_art.png 2x" 
+                        alt="logo">
+                </a>
+                <a  href="https://www.instagram.com/artlover_lessons?utm_source=qr&igsh=MXFrcGF6MHBsajU4OQ==" class="instagram-link">
+                    <img class="instagram-img" 
+                        src="./images/inst.svg"
+                        alt="logo instagram">
+                </a>
+                <div class="list-container" visibility: hidden>
+                    <ul class="list nav-bar">
+                        <li class="nav-bar-item"><a href="#About" class="link">Про мене</a></li>
+                        <li class="nav-bar-item"><a href="#Contacts" class="link">Контакти</a></li>
+                        <li class="nav-bar-item"><a href="#Feedback" class="link">Відгуки</a></li>
+                    </ul>
+                </div>
+                
+                <button 
+                type="button"
+                class="burger-btn is-open"
+                aria-expanded="false"
+                aria-controls="mobile-mune"
+                >
+                    <img src="./images/burger-menu-svgrepo-com.svg" alt="">
+            </button>
+        </nav>
+        </div>
+    </header>
+    <main class="bg">
+        <div class="wave-top">
+            <svg  viewBox="0 0 1200 220" preserveAspectRatio="none">
+                <path 
+                    d="
+                    M0 220
+                    C200 40, 400 40, 600 150
+                    S1000 210, 1200 180
+                    L1200 0
+                    L0 0
+                    Z
+                    "
+                fill="white"
+                />
+            </svg>
+          </div>
+        <div class="container-main">
+            <section class="title-wrapper">
+                <h1 class="title">Курси з основ малювання</h1>
+                <h2 class="sub-title">Навчимо професійно малювати з нуля</h2>
+                <button class="btn btn-title" type="button">записатися на занятття</button>
+            </section>
+            <section>
+                <div class="container">
+                    <p class="text-about text mb-20px">Привіт! Ми - художня майстерня “Artlover”! Пропонуємо уроки малювання на яких ти зможешь навчитися різноманітних технік та тонкощів малювання від початківці до справжнього проессіонала.
+                    </p>
+                    <p class="text-about text">
+                       Ми пропонуємо два формати навчання на вибір:
+                    </p>
+                    <p class="text-about text">- <span class="text-line">Групові уроки</span>, на яких ти зможешь малювати на різні тематики, викоритсовуючі різні техніки;</p>
+                    <p class="text-about text mb-20px">- <span class="text-line">Курси</span>, присвячені вивченню конкртеного напряму малювання (наприклад, акварельний живопис чи малювання на планшеті).</p>
+                    <p class="text-about text">Приєднуйтесь до наших занятть і будемо з вами разом розкривати ваш творчий потенціал та здібності.</p>
+                    <!-- <div class="container"> -->
+                        <ul class="my-item">
+                            <li class="my-item text-group">ІНДИВІДУАЛЬНЕ НАВЧАННЯ</li>
+                            <li class="my-item text-group">ГРУПОВІ УРОКИ</li>
+                            <li class="my-item text-group">КУРСИ</li>
+                        </ul>
+                    <!-- </div> -->
+                </div>
+    
+            </section>
+            <section class="types-classes">
+                <ul class="types-list">
+                    <li class="class-item">
+                        <h3 class="title-list">Малювання з професійним художником</h3>
+                        <p class="text">Вчитель з вищою художньою освітою познайомить вас з
+                            різноманітними техніками малювання.</p>
+                    </li>
+                    <li class="class-item">
+                        <h3 class="text">Для дітей віком від 6 - 13 років</h3>
+                        <p class="text">Заняття розраховані на різні вікові категорії, вони відріз-
+                            няються складністю завдань, вибором матеріалів для
+                            роботи, та формату малюнку (А4/А3).</p>
+                    </li>
+                    <li class="class-item">
+                        <h3 class="text">Підготовка до вступу в університет</h3>
+                        <p class="text">Якщо ви вирішили поступити в вищий навчальний заклад
+                            по таким професіям, як “Дизайнер”, “Архітектор” і т.д.
+                            ми підготуємо вас до здачі екзаменів по ним.</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="feedback" id="Feedback">
+                <div class="container">
+                    <h2>Відгуки</h2>
+                    <ul class="feedback-list">
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

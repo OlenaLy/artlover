@@ -1,0 +1,156 @@
+h1, h2, p, div, a, li {
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Century Gothic";
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.container-main{
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 0px;
+    /* margin-top: 200px; */
+    z-index: 10;
+}
+.header{
+    position: absolute;
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 0; */
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-logo {
+    width: 383px;
+}
+.instagram-link{
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-color: #d76bab;
+}
+.instagram-img{
+    width: 100%;
+
+}
+.link_logo{
+    width: 40px;
+}
+.burger-btn{
+    cursor: pointer;
+    border: none;
+    background-color: white;
+}
+.burger-btn img{
+    width: 111px;
+}
+.title-wrapper{
+    padding-top: 60px;
+    text-align: center;
+}
+
+.btn-title{
+    width: 436px;
+    height: 122px;
+    color: white;
+    border: none;
+    font-size: 33px;
+    letter-spacing: 2px;
+    line-height: 42px;
+    font-weight: bold;
+    background-image: linear-gradient(-32deg, rgba(238,96,156,0.9999999999999999) 0%, rgba(181,100,217,0.996078431372549) 100%);
+    margin-bottom: 48px;
+    border-radius: 60px;
+}
+.title {
+    font-size: 54px;
+    letter-spacing: 1px;
+    line-height: 58px;
+    font-weight: bold;
+    margin-bottom: 17px;
+}
+.sub-title{
+    font-size: 33px;
+    letter-spacing: 3px;
+    line-height: 58px;
+    color: #494648;
+    font-weight: bold;
+margin-bottom: 60px;
+}
+.text-about{
+    font-size: 29px;
+    letter-spacing: 1px;
+    line-height: 42px;
+}
+.text-group{
+    font-size: 29px;
+    letter-spacing: 1px;
+    line-height: 42px;
+    text-decoration: underline;
+    color: #ffffff;
+    /* background: pink; */
+}
+.my-item{
+    margin-bottom: 50px;
+}
+li{
+    list-style: none;
+}
+.class-item{
+    margin-bottom: 129px;
+}
+.title-list{
+    font-size: 42px;
+    /* line-height: 33px; */
+    /* margin-bottom: 10px; */
+}
+.text{
+    font-size: 29px;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 42px;
+
+}
+.wave-top {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    top: 0px;
+  }
+  .wave-top svg {
+    display: block;
+    width: 100%;
+    height: 220px; 
+  }
+.bg{
+    width: 100%;
+    background-image: url("../images/bg.png");
+    background-size: cover;
+    position: relative;
+    top: 220px;
+    z-index: 0;
+}
+
+.text-line{
+    text-decoration: underline;
+}
+.mb-20px{
+    margin-bottom: 20px;
+}
+
