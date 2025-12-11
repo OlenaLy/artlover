@@ -41,7 +41,7 @@ body{
     width: 58px;
     height: 58px;
     border-radius: 50%;
-    background-color: #d76bab;
+    /* background-color: #d76bab; */
 }
 .instagram-img{
     width: 100%;
@@ -146,11 +146,14 @@ li{
     top: 220px;
     z-index: 0;
 }
-
 .text-line{
     text-decoration: underline;
 }
 .mb-20px{
     margin-bottom: 20px;
+}
+.logo-white-item{
+    height: 91px;
+    margin-right: 40px;
 }
 
