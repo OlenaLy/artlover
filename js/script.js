@@ -1,28 +1,19 @@
-// const feedbackList = document.querySelector('.feedback-list');
 
-// const feedbackImgToHtml = feedbackImages.map(
-//     (image) => 
-//         `
-//         <li class="feedback-item"
-//         <img 
-//             src="${image.src1x}"
-//             srcset="
-//                 ${image.src1x} 1x,
-//                 ${image.src2x} 2x
-//             "
-//             alt="${image.alt}"
-//             class="feedback-img"
-//             />
-//         </li>
-//         `
-// )
-// .join('');
 
-// feedbackList.innerHTML = feedbackImgToHtml;
+const menu = document.querySelector('.menu');
+const offScreenMenu = document.querySelector('.off-screen-menu');
 
-//https://www.instagram.com/artlover_lessons?utm_source=qr&igsh=MXFrcGF6MHBsajU4OQ==
+menu.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    offScreenMenu.classList.toggle('active');
+})
 
-    // document.querySelector('#btn-instagram').addEventListener('click', function (event) {
-    //     event.preventDefault();
-    //     window.location.href = 'https://www.instagram.com/artlover_lessons?utm_source=qr&igsh=MXFrcGF6MHBsajU4OQ==';
-    // });
+const navItem = document.querySelectorAll('.off-screen-menu .link');
+
+navItem.forEach(item => {
+
+    item.addEventListener('click', () => {
+        menu.classList.remove('active');
+        offScreenMenu.classList.remove('active');
+    } )
+})

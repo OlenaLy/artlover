@@ -1,29 +1,30 @@
-h1, h2, p, div, a, li {
+h1, h2, p, div, a, li, ul {
     margin: 0;
     padding: 0;
 }
+a {
+    color: #d76bab;
+    text-decoration: none;
+}
+
 body{
     margin: 0;
     padding: 0;
     font-family: "Century Gothic";
+    background-color: #fff;
 }
 .container{
     max-width: 900px;
     margin: 0 auto;
+    overflow: hidden;
 }
 .container-main{
-    position: relative;
     max-width: 900px;
     margin: 0 auto;
     padding-top: 0px;
-    /* margin-top: 200px; */
-    z-index: 10;
 }
+
 .header{
-    position: absolute;
-    /* position: fixed; */
-    /* top: 0; */
-    /* left: 0; */
     width: 100%;
     background-color: #fff;
     box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.3);
@@ -41,23 +42,78 @@ body{
     width: 58px;
     height: 58px;
     border-radius: 50%;
-    /* background-color: #d76bab; */
 }
 .instagram-img{
     width: 100%;
-
 }
 .link_logo{
     width: 40px;
 }
-.burger-btn{
+.off-screen-menu{
+    padding-top: 30px;
+    background-color: #fff;
+    /* height: 40vh; */
+    width: 100%;
+    max-width: 250px;
+    position: relative;
+    top: 0;
+    right: -400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    transition: .3s ease;
+}
+.off-screen-menu.active{
+    right: 10vh;
+}
+nav{
+    padding: 1 rem;
+    display: flex;
+    background-color: #fff;
+}
+
+.menu{
+    height: 50px;
+    width: 40px;
+    margin-left: auto;
+    position: relative;
+    z-index: 20;
     cursor: pointer;
-    border: none;
-    background-color: white;
 }
-.burger-btn img{
-    width: 111px;
+.menu span{
+    height: 5px;
+    width: 100%;
+    background-color: #000;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
 }
+.menu span:nth-child(1){
+    top: 25%;
+}
+.menu span:nth-child(3){
+    top: 75%;
+}
+.menu.active span{
+    background-color: #d76bab;
+}
+.menu.active span:nth-child(1){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.menu.active span:nth-child(2){
+    opacity: 0;
+}
+.menu.active span:nth-child(3){
+    top: 50%;
+    transform: translate(-50%, 50%) rotate(-45deg);
+}
+
+
 .title-wrapper{
     padding-top: 60px;
     text-align: center;
@@ -89,7 +145,7 @@ body{
     line-height: 58px;
     color: #494648;
     font-weight: bold;
-margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 .text-about{
     font-size: 29px;
@@ -101,10 +157,9 @@ margin-bottom: 60px;
     letter-spacing: 1px;
     line-height: 42px;
     text-decoration: underline;
-    color: #ffffff;
-    /* background: pink; */
+    color: #d76bab;
 }
-.my-item{
+.my-item:nth-last-of-type(n+2){
     margin-bottom: 50px;
 }
 li{
@@ -115,36 +170,17 @@ li{
 }
 .title-list{
     font-size: 42px;
-    /* line-height: 33px; */
-    /* margin-bottom: 10px; */
 }
 .text{
     font-size: 29px;
     text-align: justify;
     letter-spacing: 2px;
     line-height: 42px;
-
 }
-.wave-top {
-    position: absolute;
-    z-index: 1;
+
+.bg-1{
     width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    top: 0px;
-  }
-  .wave-top svg {
-    display: block;
-    width: 100%;
-    height: 220px; 
-  }
-.bg{
-    width: 100%;
-    background-image: url("../images/bg.png");
-    background-size: cover;
-    position: relative;
-    top: 220px;
-    z-index: 0;
+    margin-top: 10px;
 }
 .text-line{
     text-decoration: underline;
@@ -155,5 +191,130 @@ li{
 .logo-white-item{
     height: 91px;
     margin-right: 40px;
+    background-color: #d76bab;
 }
+.crutch{
+    height: 800px;
+}
+.bg-foto{
+    margin-bottom: 25px;
+    position: relative;
+    width: 100%;
+    height: 900px; /* або будь-яка інша висота */
+     /* overflow: hidden;щоб фото не могли виходити за межі */
+}
+.foto-left {
+    position: absolute;
+    left: -15%;     /* вихід за межі екрана */
+    bottom: 0; 
+    width: 450px;  /* фіксована ширина для стабільності */
+    object-fit: cover; 
+ } 
 
+.foto-right {
+    position: absolute;
+    right: -30%;    /* вихід за межі */
+    bottom: 0;   
+    width: 700px;
+    object-fit: cover; 
+}
+.kolo1, .kolo2, .kolo3 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+.kolo1{
+    background-color: #9256e3;
+}
+.kolo2{
+    background-color: #b27cdc;
+}
+.kolo3{
+    background-color: #ee609c;
+}
+.work-title{
+    font-size: 42px;
+    letter-spacing: 1px;
+    line-height: 58px;
+    color: #b565d9;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 46px;
+}
+.works-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 56px;
+}
+.work-border{
+    width: 389px;
+    height: 572px;
+    border-radius: 100px;
+    filter: drop-shadow(0px 2px 4px #902bb8);
+    background-color: #ffffff;
+    border: 4.68px solid #fcfeff;
+}
+.title-reviews{
+    font-size: 42px;
+    letter-spacing: 1px;
+    line-height: 58px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.bg-2{
+    /* margin-top: 600px; */
+    position: relative;
+    padding-bottom: 900px;
+    width: 100%;
+
+}
+.bg-2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+    height: 2000px; /* ВИСОТА ТВОГО background зображення */
+    
+    background-image: url(../images/bg_2.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto; /* по ширині тягнеться, висота зберігається */
+    aspect-ratio: 1080 / 2635;
+
+    z-index: -1; /* щоб був під контентом */
+}
+.feedbacks-wrapper{
+    display: flex;
+    justify-content: center;
+    
+}
+.feed{
+    width: 546px;
+    height: 315px;
+    border-radius: 138px;
+    border: 3px double #ffffff;
+    background-image: linear-gradient(45deg, #e8e8e8 21%, #eeedee 44%, #fffeff 100%);
+
+}
+.arrow-a{
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 20;
+    background-color: #ee609c;
+}
+.arrow-img{
+    margin-left: 4px;
+    margin-top: 2px;
+    z-index: 21;
+    width: 40px;
+    height: 40px;
+}
