@@ -17,3 +17,16 @@ navItem.forEach(item => {
         offScreenMenu.classList.remove('active');
     } )
 })
+
+function linkInst (){
+    window.location.href='https://www.instagram.com/artlover_lessons?utm_source=qr&igsh=MXFrcGF6MHBsajU4OQ=='
+}
+document.querySelector('.btn-title').addEventListener('click', linkInst);
+document.querySelector('#instagram-img').addEventListener('click', linkInst);
+
+const textLink = document.querySelector('.my-item-wrap');
+
+textLink.addEventListener('click', function(e){
+    if (e.target.tagName != 'LI') return;
+    alert('Чекаємо макет дизайнера');
+})
