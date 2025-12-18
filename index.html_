@@ -41,15 +41,15 @@
         </a>
      </div>
     <section class="bg-1">
-        <div class="container">
+        <div class="container-main">
             <div class="title-wrapper">
                 <h1 class="title">Курси з основ малювання</h1>
                 <h2 class="sub-title">Навчимо професійно малювати з нуля</h2>
                 <button class="btn btn-title" type="button">записатися на заняття</button>
             </div>
-            <div class="group-about">
+            <div class="container ">
                 <p class="text-about text mb-20px">Привіт! Ми - художня майстерня “Artlover”! Пропонуємо уроки малювання на яких ти зможешь навчитися різноманітних технік та тонкощів малювання від початківці до справжнього проессіонала.
-                </p>
+                    </p>
                 <p class="text-about text">
                        Ми пропонуємо два формати навчання на вибір:</p>
                 <p class="text-about text">- <span class="text-line">Групові уроки</span>, на яких ти зможешь малювати на різні тематики, викоритсовуючі різні техніки;</p>
@@ -80,14 +80,14 @@
                 </li>
                 <li class="class-item">
                     <div class="kolo2"></div>
-                    <h3 class="title-list">Для дітей віком від 6 - 13 років</h3>
+                    <h3 class="text">Для дітей віком від 6 - 13 років</h3>
                     <p class="text">Заняття розраховані на різні вікові категорії, вони відріз-
                         няються складністю завдань, вибором матеріалів для
                         роботи, та формату малюнку (А4/А3).</p>
                 </li>
                 <li class="class-item">
                     <div class="kolo3"></div>
-                    <h3 class="title-list">Підготовка до вступу в університет</h3>
+                    <h3 class="text">Підготовка до вступу в університет</h3>
                     <p class="text">Якщо ви вирішили поступити в вищий навчальний заклад
                         по таким професіям, як “Дизайнер”, “Архітектор” і т.д.
                         ми підготуємо вас до здачі екзаменів по ним.</p>

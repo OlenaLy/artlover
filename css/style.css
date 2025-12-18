@@ -14,35 +14,35 @@ a {
 }
 body{
     margin: 0;
-    padding: 0;
+    /* padding-top: 170px; */
+    padding-top: clamp(80px, 20vw, 170px);
     font-family: "Century Gothic";
     background-color: #fff;
 }
 .container{
     max-width: 900px;
     margin-inline: auto;
-    padding-inline: 5%;
+    padding-inline: 7%;
     overflow: hidden;
 }
 .container-main{
     max-width: 900px;
     margin-inline: auto;
-    /* padding-inline: 16px; */
     padding-top: 0px;
 }
 
 .header{
-    position: sticky;
+    width: 100%;
+    position: fixed;
     top: 0;
-    /* width: 100%; */
     background-color: #fff;
     box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.3);
     padding: 10px;
     z-index: 1000;
+    
 }
 .header-nav{
     display: flex;
-    /* gap: 16px; */
     justify-content: space-between;
     align-items: center;
 }
@@ -51,8 +51,8 @@ body{
 }
 
 #instagram-img{
-    width: clamp(40px, 8vw, 58px);
-    height: clamp(40px, 8vw, 58px);
+    width: clamp(50px, 8vw, 58px);
+    height: clamp(50px, 8vw, 58px);
     /* height: 50px; */
     background-color: #fff;
     background-image: url('../images/instagram.png');
@@ -71,15 +71,15 @@ body{
     max-width: 150px;
     position: relative;
     top: 0;
-    right: -400px;
+    right: -450px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 2rem;
+    font-size: clamp(16px, 3.5vw, 29px);
     transition: .3s ease;
 }
 .off-screen-menu.active{
-    right: 5vh;
+    right: 0;
 }
 nav{
     padding: 1 rem;
@@ -129,14 +129,14 @@ nav{
 
 
 .title-wrapper{
-    padding-top: 60px;
+    padding-top: clamp(20px, 10vw, 60px);
     text-align: center;
 }
 
 .btn-title{
     width: clamp(150px, 40vw, 436px);
     /* max-width: 436px; */
-    /* width:  min(100%, 350px); */
+    width:  min(100%, 350px);
     padding: 10px 20px;
     color: white;
     border: none;
@@ -149,15 +149,12 @@ nav{
 }
 .title {
     font-size:  clamp(28px, 6vw, 54px);
-    /* letter-spacing: 1px; */
     line-height: 1.1;
     font-weight: bold;
     margin-bottom: 17px;
 }
 .sub-title{
     font-size: clamp(18px, 4vw, 33px);
-    /* letter-spacing: 3px;
-    line-height: 58px; */
     line-height: 1.1;
     color: #494648;
     font-weight: bold;
@@ -184,7 +181,7 @@ li{
     margin-bottom: clamp(30px, 5vw, 130px);
 }
 .title-list{
-    font-size: clamp(32px, 3.5vw, 42px);
+    font-size: clamp(28px, 3.5vw, 42px);
 }
 .text{
     font-size: clamp(16px, 3.5vw, 29px);
@@ -194,7 +191,6 @@ li{
 }
 
 .bg-1{
-    /* position: relative; */
     width: 100%;
     margin-top: 10px;
 }
@@ -206,7 +202,6 @@ li{
 }
 .logo-white-item{
     height: 91px;
-    /* margin-right: 40px; */
     background-color: #d76bab;
 }
 .crutch{
@@ -262,7 +257,8 @@ li{
 .works-wrapper{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: clamp(10px, 10vw,30px);
     margin-bottom: 56px;
 }
 .work-border{
@@ -360,6 +356,20 @@ li{
 
 
 @media (max-width: 600px) {
+    #instagram-img{
+        display: none;
+    }
+    .text-group{
+        flex-direction: column;
+        align-items: center;
+    }
 }
-@media (max-width: 480px) { }
+@media (max-width: 480px) {
+    .header-nav{
+        justify-content: center;
+    }
+    .off-screen-menu, .menu{
+        display: none;
+    }
+ }
 
